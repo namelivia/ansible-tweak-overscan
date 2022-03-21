@@ -1,0 +1,8 @@
+---
+- name: Copy config
+  template:
+    src: config.j2
+    dest: "/boot/config.txt"
+    owner: root
+    group: root
+    mode: '0644'
